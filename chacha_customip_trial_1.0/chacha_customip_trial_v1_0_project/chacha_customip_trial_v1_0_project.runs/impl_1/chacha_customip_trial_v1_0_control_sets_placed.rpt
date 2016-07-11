@@ -1,0 +1,95 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sun Jul 03 22:27:04 2016
+| Host         : DESKTOP-0GOJOC6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file chacha_customip_trial_v1_0_control_sets_placed.rpt
+| Design       : chacha_customip_trial_v1_0
+| Device       : xc7z010
+-------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |              18 |           10 |
+| No           | Yes                   | No                     |               5 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            3670 |         1190 |
+| Yes          | Yes                   | No                     |              32 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+------------------------------------------------------+------------------------------------+------------------+----------------+
+|       Clock Signal      |                     Enable Signal                    |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-------------------------+------------------------------------------------------+------------------------------------+------------------+----------------+
+|  s00_axi_aclk_IBUF_BUFG | inst0/keylen_we10_out                                | inst0/core/qr_ctr_reg_reg_rep__8_0 |                1 |              1 |
+|  chacha_clk_IBUF_BUFG   |                                                      |                                    |                1 |              2 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/dr_ctr_we                                 | inst0/core/qr_ctr_reg_reg_rep__8_0 |                1 |              4 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/rounds_we13_out                                | inst0/core/qr_ctr_reg_reg_rep__8_0 |                3 |              5 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/ctrl_we1_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |                1 |              5 |
+|  s00_axi_aclk_IBUF_BUFG |                                                      | inst0/core/qr_ctr_reg_reg_rep__8_0 |                5 |              7 |
+|  chacha_clk_IBUF_BUFG   |                                                      | inst0/core/qr_ctr_reg_reg_rep__8_0 |                8 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key5_we7_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |                9 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key6_we8_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |               13 |             32 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/block0_ctr_we                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |                8 |             32 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/block1_ctr_reg[31]_i_1_n_0                | inst0/core/qr_ctr_reg_reg_rep__8_0 |                5 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key7_we9_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |                9 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key4_we6_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |               10 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | chacha_customip_trial_v1_0_S00_AXI_inst/slv_reg_rden | inst0/core/qr_ctr_reg_reg_rep__8_0 |               23 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in0_we14_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               15 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in10_we24_out                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |               16 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in11_we25_out                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |               16 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in12_we26_out                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |               15 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in13_we27_out                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |               11 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in14_we28_out                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |               15 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in15_we29_out                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |               18 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in1_we15_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               14 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in2_we16_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               20 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in3_we17_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               16 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in4_we18_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               16 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in5_we19_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |                9 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in6_we20_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               17 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in7_we21_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               17 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in8_we22_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               10 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/data_in9_we23_out                              | inst0/core/qr_ctr_reg_reg_rep__8_0 |               12 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/iv0_we11_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |               10 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key0_we2_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |                8 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key1_we3_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |                8 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key2_we4_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |               10 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/key3_we5_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |               10 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/iv1_we12_out                                   | inst0/core/qr_ctr_reg_reg_rep__8_0 |               11 |             32 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/sample_params                             | inst0/core/qr_ctr_reg_reg_rep__8_0 |              117 |            324 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/init_state                                | inst0/core/qr_ctr_reg_reg_rep__8_0 |               88 |            387 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/ready_new                                 | inst0/core/qr_ctr_reg_reg_rep__8_0 |              173 |            512 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/data_in_we                                | inst0/core/qr_ctr_reg_reg_rep__8_0 |              132 |            512 |
+|  chacha_clk_IBUF_BUFG   | inst0/core/x0_we                                     | inst0/core/qr_ctr_reg_reg_rep__8_0 |              193 |            512 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/core/E[0]                                      | inst0/core/qr_ctr_reg_reg_rep__8_0 |              133 |            512 |
++-------------------------+------------------------------------------------------+------------------------------------+------------------+----------------+
+
+

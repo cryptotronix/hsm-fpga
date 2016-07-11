@@ -1,0 +1,763 @@
+
+*** Running vivado
+    with args -log chacha_customip_trial_v1_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source chacha_customip_trial_v1_0.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source chacha_customip_trial_v1_0.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at F:/Xilinx/Vivado/2016.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top chacha_customip_trial_v1_0 -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19088 
+WARNING: [Synth 8-992] read_addr_out_w is already implicitly declared earlier [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0.v:79]
+WARNING: [Synth 8-992] write_addr_out_w is already implicitly declared earlier [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0.v:80]
+WARNING: [Synth 8-992] chacha_data_out_w is already implicitly declared earlier [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0.v:83]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 292.727 ; gain = 85.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'chacha_customip_trial_v1_0' [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'chacha_customip_trial_v1_0_S00_AXI' [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0_S00_AXI.v:732]
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0_S00_AXI.v:2889]
+INFO: [Synth 8-256] done synthesizing module 'chacha_customip_trial_v1_0_S00_AXI' (1#1) [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'chacha' [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/src/chacha.v:40]
+	Parameter ADDR_NAME0 bound to: 8'b00000000 
+	Parameter ADDR_NAME1 bound to: 8'b00000001 
+	Parameter ADDR_VERSION bound to: 8'b00000010 
+	Parameter ADDR_CTRL bound to: 8'b00001000 
+	Parameter CTRL_INIT_BIT bound to: 0 - type: integer 
+	Parameter CTRL_NEXT_BIT bound to: 1 - type: integer 
+	Parameter ADDR_STATUS bound to: 8'b00001001 
+	Parameter STATUS_READY_BIT bound to: 0 - type: integer 
+	Parameter ADDR_KEYLEN bound to: 8'b00001010 
+	Parameter KEYLEN_BIT bound to: 0 - type: integer 
+	Parameter ADDR_ROUNDS bound to: 8'b00001011 
+	Parameter ROUNDS_HIGH_BIT bound to: 4 - type: integer 
+	Parameter ROUNDS_LOW_BIT bound to: 0 - type: integer 
+	Parameter ADDR_KEY0 bound to: 8'b00010000 
+	Parameter ADDR_KEY1 bound to: 8'b00010001 
+	Parameter ADDR_KEY2 bound to: 8'b00010010 
+	Parameter ADDR_KEY3 bound to: 8'b00010011 
+	Parameter ADDR_KEY4 bound to: 8'b00010100 
+	Parameter ADDR_KEY5 bound to: 8'b00010101 
+	Parameter ADDR_KEY6 bound to: 8'b00010110 
+	Parameter ADDR_KEY7 bound to: 8'b00010111 
+	Parameter ADDR_IV0 bound to: 8'b00100000 
+	Parameter ADDR_IV1 bound to: 8'b00100001 
+	Parameter ADDR_DATA_IN0 bound to: 8'b01000000 
+	Parameter ADDR_DATA_IN1 bound to: 8'b01000001 
+	Parameter ADDR_DATA_IN2 bound to: 8'b01000010 
+	Parameter ADDR_DATA_IN3 bound to: 8'b01000011 
+	Parameter ADDR_DATA_IN4 bound to: 8'b01000100 
+	Parameter ADDR_DATA_IN5 bound to: 8'b01000101 
+	Parameter ADDR_DATA_IN6 bound to: 8'b01000110 
+	Parameter ADDR_DATA_IN7 bound to: 8'b01000111 
+	Parameter ADDR_DATA_IN8 bound to: 8'b01001000 
+	Parameter ADDR_DATA_IN9 bound to: 8'b01001001 
+	Parameter ADDR_DATA_IN10 bound to: 8'b01001010 
+	Parameter ADDR_DATA_IN11 bound to: 8'b01001011 
+	Parameter ADDR_DATA_IN12 bound to: 8'b01001100 
+	Parameter ADDR_DATA_IN13 bound to: 8'b01001101 
+	Parameter ADDR_DATA_IN14 bound to: 8'b01001110 
+	Parameter ADDR_DATA_IN15 bound to: 8'b01001111 
+	Parameter ADDR_DATA_OUT0 bound to: 8'b10000000 
+	Parameter ADDR_DATA_OUT1 bound to: 8'b10000001 
+	Parameter ADDR_DATA_OUT2 bound to: 8'b10000010 
+	Parameter ADDR_DATA_OUT3 bound to: 8'b10000011 
+	Parameter ADDR_DATA_OUT4 bound to: 8'b10000100 
+	Parameter ADDR_DATA_OUT5 bound to: 8'b10000101 
+	Parameter ADDR_DATA_OUT6 bound to: 8'b10000110 
+	Parameter ADDR_DATA_OUT7 bound to: 8'b10000111 
+	Parameter ADDR_DATA_OUT8 bound to: 8'b10001000 
+	Parameter ADDR_DATA_OUT9 bound to: 8'b10001001 
+	Parameter ADDR_DATA_OUT10 bound to: 8'b10001010 
+	Parameter ADDR_DATA_OUT11 bound to: 8'b10001011 
+	Parameter ADDR_DATA_OUT12 bound to: 8'b10001100 
+	Parameter ADDR_DATA_OUT13 bound to: 8'b10001101 
+	Parameter ADDR_DATA_OUT14 bound to: 8'b10001110 
+	Parameter ADDR_DATA_OUT15 bound to: 8'b10001111 
+	Parameter DEFAULT_CTR_INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CORE_NAME0 bound to: 1667785059 - type: integer 
+	Parameter CORE_NAME1 bound to: 1751195680 - type: integer 
+	Parameter CORE_VERSION bound to: 808335408 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'chacha_core' [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/src/chacha_core.v:40]
+	Parameter STATE_QR0 bound to: 1'b0 
+	Parameter STATE_QR1 bound to: 1'b1 
+	Parameter NUM_ROUNDS bound to: 4'b1000 
+	Parameter TAU0 bound to: 1634760805 - type: integer 
+	Parameter TAU1 bound to: 824206446 - type: integer 
+	Parameter TAU2 bound to: 2036477238 - type: integer 
+	Parameter TAU3 bound to: 1797285236 - type: integer 
+	Parameter SIGMA0 bound to: 1634760805 - type: integer 
+	Parameter SIGMA1 bound to: 857760878 - type: integer 
+	Parameter SIGMA2 bound to: 2036477234 - type: integer 
+	Parameter SIGMA3 bound to: 1797285236 - type: integer 
+	Parameter CTRL_IDLE bound to: 3'b000 
+	Parameter CTRL_INIT bound to: 3'b001 
+	Parameter CTRL_ROUNDS bound to: 3'b010 
+	Parameter CTRL_FINALIZE bound to: 3'b011 
+	Parameter CTRL_DONE bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'chacha_qr' [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/src/chacha_qr.v:42]
+INFO: [Synth 8-256] done synthesizing module 'chacha_qr' (2#1) [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/src/chacha_qr.v:42]
+WARNING: [Synth 8-5788] Register keylen_reg_reg in module chacha_core is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/src/chacha_core.v:445]
+INFO: [Synth 8-256] done synthesizing module 'chacha_core' (3#1) [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/src/chacha_core.v:40]
+INFO: [Synth 8-256] done synthesizing module 'chacha' (4#1) [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/src/chacha.v:40]
+INFO: [Synth 8-256] done synthesizing module 'chacha_customip_trial_v1_0' (5#1) [F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/hdl/chacha_customip_trial_v1_0.v:4]
+WARNING: [Synth 8-3331] design chacha_core has unconnected port rounds[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[31]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[30]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[29]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[28]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[27]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[26]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[25]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[24]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[23]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[22]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[21]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[20]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[19]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[18]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[17]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[16]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[15]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[14]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[13]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[12]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[11]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[10]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[9]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[8]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[7]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[6]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[5]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[4]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[3]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[2]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WDATA[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 342.363 ; gain = 134.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 342.363 ; gain = 134.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 342.363 ; gain = 134.688
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'chacha_ctrl_reg_reg' in module 'chacha_core'
+INFO: [Synth 8-5545] ROM "block1_ctr_we" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "init_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "update_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_new" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ctrl_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keylen_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rounds_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key0_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key1_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key2_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key3_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key4_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key5_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key6_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key7_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iv0_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iv1_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in0_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in1_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in2_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in3_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in4_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in5_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in6_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in7_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in8_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in9_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in10_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in11_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in12_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in13_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in14_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in15_we" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                              000 |                              000
+               CTRL_INIT |                              001 |                              001
+             CTRL_ROUNDS |                              010 |                              010
+           CTRL_FINALIZE |                              011 |                              011
+               CTRL_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'chacha_ctrl_reg_reg' using encoding 'sequential' in module 'chacha_core'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 376.145 ; gain = 168.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 34    
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input    512 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 16    
++---Registers : 
+	              512 Bit    Registers := 2     
+	               32 Bit    Registers := 86    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 87    
+	  31 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 45    
+	   5 Input      1 Bit        Muxes := 10    
+	  30 Input      1 Bit        Muxes := 30    
+	  32 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module chacha_customip_trial_v1_0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module chacha_customip_trial_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module chacha_qr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+Module chacha_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 18    
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input    512 Bit         XORs := 1     
++---Registers : 
+	              512 Bit    Registers := 2     
+	               32 Bit    Registers := 43    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 85    
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 10    
+Module chacha 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 42    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  31 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  30 Input      1 Bit        Muxes := 30    
+	   2 Input      1 Bit        Muxes := 30    
+	  32 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 446.656 ; gain = 238.980
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "block1_ctr_we" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "inst0/ctrl_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/keylen_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/rounds_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key0_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key1_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key2_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key3_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key4_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key5_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key6_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/key7_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/iv0_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/iv1_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/tmp_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in15_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in14_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in13_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in12_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in11_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in10_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in9_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in8_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in7_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in6_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in5_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in4_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in3_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in2_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in1_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst0/data_in0_we" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design chacha_core has unconnected port rounds[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_awaddr[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_awaddr[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_araddr[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_araddr[0]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design chacha_customip_trial_v1_0 has unconnected port s00_axi_arprot[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 448.367 ; gain = 240.691
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 448.367 ; gain = 240.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[24]' (FDCE) to 'inst0/core/state1_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[25]' (FDCE) to 'inst0/core/state1_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[26]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[27]' (FDCE) to 'inst0/core/state1_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[28]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[29]' (FDCE) to 'inst0/core/state1_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[30]' (FDCE) to 'inst0/core/state1_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[31]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[24]' (FDCE) to 'inst0/core/state1_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[26]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[27]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[28]' (FDCE) to 'inst0/core/state1_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[29]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[30]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[31]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[24]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[25]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[26]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[27]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[28]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[29]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[30]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[31]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[24]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[25]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[26]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[27]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[28]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[29]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[30]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[31]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[16]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[17]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[18]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[19]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[20]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[21]' (FDCE) to 'inst0/core/state1_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[22]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[23]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[16]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[17]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[18]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[19]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[20]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[21]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[22]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[23]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[16]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[17]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[18]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[19]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[20]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[21]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[22]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[23]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[16]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[17]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[18]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[19]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[20]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[21]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[22]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[23]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[8]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[9]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[10]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[11]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[12]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[13]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[14]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[15]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[8]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[9]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[10]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[11]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[12]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[13]' (FDCE) to 'inst0/core/state1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[14]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state1_reg_reg[15]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[8]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[9]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[10]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[11]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[12]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[13]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[14]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state2_reg_reg[15]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[8]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[9]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[10]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[11]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[12]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[13]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[14]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state0_reg_reg[15]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[0]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[1]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[2]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[3]' (FDCE) to 'inst0/core/state0_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst0/core/state3_reg_reg[4]' (FDCE) to 'inst0/core/state1_reg_reg[6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst0/core /\state0_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\chacha_customip_trial_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\chacha_customip_trial_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[29]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[24]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[25]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[1]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[26]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[27]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[28]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[29]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[30]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[31]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[24]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[26]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[27]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[28]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[21]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[30]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[31]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[24]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[25]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[26]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[27]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[28]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[29]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[30]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[31]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[24]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[25]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[26]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[27]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[28]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[29]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[30]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[31]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[16]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[17]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[18]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[19]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[20]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[21]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[22]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[23]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[16]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[17]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[18]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[19]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[20]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[14]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[22]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[23]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[16]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[17]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[18]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[19]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[20]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[21]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[22]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[23]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[16]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[17]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[18]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[19]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[20]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[21]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[22]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[23]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[8]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[9]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[10]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[11]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[12]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[13]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[14]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[15]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[8]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[9]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[10]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[11]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[12]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[13]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[6]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state1_reg_reg[15]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[8]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[9]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[10]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[11]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[12]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[13]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[14]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state2_reg_reg[15]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[8]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[9]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[10]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[11]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[12]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[13]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[14]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state0_reg_reg[15]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[0]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[1]) is unused and will be removed from module chacha_core.
+WARNING: [Synth 8-3332] Sequential element (state3_reg_reg[2]) is unused and will be removed from module chacha_core.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.723 ; gain = 401.047
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 608.723 ; gain = 401.047
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   275|
+|3     |LUT1   |    99|
+|4     |LUT2   |   706|
+|5     |LUT3   |   434|
+|6     |LUT4   |   774|
+|7     |LUT5   |  1199|
+|8     |LUT6   |   852|
+|9     |MUXF7  |    58|
+|10    |FDCE   |  3687|
+|11    |FDPE   |     1|
+|12    |FDRE   |    39|
+|13    |IBUF   |    56|
+|14    |OBUF   |    41|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+-----------------------------------+------+
+|      |Instance                                  |Module                             |Cells |
++------+------------------------------------------+-----------------------------------+------+
+|1     |top                                       |                                   |  8223|
+|2     |  chacha_customip_trial_v1_0_S00_AXI_inst |chacha_customip_trial_v1_0_S00_AXI |    59|
+|3     |  inst0                                   |chacha                             |  8065|
+|4     |    core                                  |chacha_core                        |  6028|
++------+------------------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 608.723 ; gain = 401.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 195 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 608.723 ; gain = 401.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 608.723 ; gain = 401.047
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 331 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+194 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 608.723 ; gain = 401.047
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 608.723 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 03 22:16:27 2016...

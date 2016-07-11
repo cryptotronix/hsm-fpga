@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Jul 02 09:39:17 2016
+# Process ID: 21196
+# Current directory: F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/chacha_customip_trial_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6292 F:\Xilinx\Projects\ip_repo\chacha_customip_trial_1.0\chacha_customip_trial_v1_0_project\chacha_customip_trial_v1_0_project.xpr
+# Log file: F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/chacha_customip_trial_v1_0_project/vivado.log
+# Journal file: F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/chacha_customip_trial_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/chacha_customip_trial_v1_0_project/chacha_customip_trial_v1_0_project.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::open_ipxact_file F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/component.xml
+set_property version 2.0 [ipx::current_core]
+set_property display_name chacha_customip_trial_v2.0 [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0
+close_project
+open_project F:/Xilinx/Projects/chacha_trial1/chacha_trial1.xpr
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+report_ip_status -name ip_status_1
+export_ip_user_files -of_objects [get_ips  chacha_design_chacha_customip_trial_0_0] -no_script -reset -quiet
+upgrade_ip -vlnv xilinx.com:user:chacha_customip_trial:2.0 [get_ips  chacha_design_chacha_customip_trial_0_0] -log ip_upgrade.log
+generate_target all [get_files  F:/Xilinx/Projects/chacha_trial1/chacha_trial1.srcs/sources_1/bd/chacha_design/chacha_design.bd]
+export_ip_user_files -of_objects [get_files F:/Xilinx/Projects/chacha_trial1/chacha_trial1.srcs/sources_1/bd/chacha_design/chacha_design.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files F:/Xilinx/Projects/chacha_trial1/chacha_trial1.srcs/sources_1/bd/chacha_design/chacha_design.bd] -directory F:/Xilinx/Projects/chacha_trial1/chacha_trial1.ip_user_files/sim_scripts -ip_user_files_dir F:/Xilinx/Projects/chacha_trial1/chacha_trial1.ip_user_files -ipstatic_source_dir F:/Xilinx/Projects/chacha_trial1/chacha_trial1.ip_user_files/ipstatic -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+set_property top chacha_design [current_fileset]
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {F:/Xilinx/Projects/chacha_trial1/chacha_trial1.srcs/sources_1/bd/chacha_design/chacha_design.bd}
+validate_bd_design -force
+make_wrapper -files [get_files F:/Xilinx/Projects/chacha_trial1/chacha_trial1.srcs/sources_1/bd/chacha_design/chacha_design.bd] -top
+add_files -norecurse F:/Xilinx/Projects/chacha_trial1/chacha_trial1.srcs/sources_1/bd/chacha_design/hdl/chacha_design_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file mkdir F:/Xilinx/Projects/chacha_trial1/chacha_trial1.sdk
+write_hwdef -force  -file F:/Xilinx/Projects/chacha_trial1/chacha_trial1.sdk/chacha_design.hdf
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE F:/Xilinx/Projects/chacha_trial1 [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.TCL.POST F:/Xilinx/Projects/chacha_trial1 [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.ARGS.RAW_BITFILE true [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE {} [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.TCL.POST {} [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

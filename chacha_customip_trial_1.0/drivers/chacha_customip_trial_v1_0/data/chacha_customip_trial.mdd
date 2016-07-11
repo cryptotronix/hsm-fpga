@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER chacha_customip_trial
+	OPTION supported_peripherals = (chacha_customip_trial);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = chacha_customip_trial;
+END DRIVER
