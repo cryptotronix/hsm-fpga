@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Fri Jul 29 22:57:52 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="c6d5f293256f4c8fb5d39d4d48b860b9" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceCommand.PACommandNames_OPEN_PROJECT, Open Project..." value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, sha256 (sha256.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, sha256_v1_0 (sha256_v1_0.v" value="14" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, sha256_v2.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_VERSION, 2.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, F:/Xilinx/Projects/sha256_trial/sha256_trial.xpr" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, Merge changes from Customization Parameters Wizard" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, Merge changes from File Groups Wizard" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Addressing and Memory, 5" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Compatibility, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Customization GUI, 6" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Customization Parameters, 3" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, File Groups, 2" value="4" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Identification, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Ports and Interfaces, 4" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Review and Package, 7" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, Package IP" value="1" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, clk" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 139, 147" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 167, 97" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 191, 243" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 245, 76" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 245, 85" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 249, 92" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 249, 92, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 250, 107" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 250, 107, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 261, 62" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 261, 62, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 300, 176" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 393, 144" value="1" type="GuiResourceData"/>
+<property name="sha256.v, 405, 167" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 103, 62" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 105, 61" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 105, 62" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 138, 298" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 34, 316" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 36, 304" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 53, 219" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 54, 253" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 71, 267" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 72, 27" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 89, 62" value="3" type="GuiResourceData"/>
+<property name="sha256_v1_0.v, 89, 62, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 103, 62" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 106, 63" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 109, 62" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 145, 220" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 158, 295" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 196, 145" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 31, 159" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 322, 243" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 348, 278" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 62, 143" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 86, 62" value="1" type="GuiResourceData"/>
+<property name="sha256_v1_0_S00_AXI.v, 86, 62, false, false, false, false, true" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="31" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="23" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
