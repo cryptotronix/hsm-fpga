@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1471193119">
+  <File Type="RDS-PROPCONSTRS" Name="sha512_v1_0_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="sha512_v1_0.tcl"/>
+  <File Type="RDS-RDS" Name="sha512_v1_0.vds"/>
+  <File Type="RDS-UTIL" Name="sha512_v1_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sha512_v1_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sha512_v1_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="sha512_v1_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="sha512_v1_0_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/sha512_k_constants.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../git_folder/sha512/src/rtl/sha512_k_constants.v"/>
+        <Attr Name="ImportTime" Val="1471188205"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/sha512_h_constants.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../git_folder/sha512/src/rtl/sha512_h_constants.v"/>
+        <Attr Name="ImportTime" Val="1471188205"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/sha512_w_mem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../git_folder/sha512/src/rtl/sha512_w_mem.v"/>
+        <Attr Name="ImportTime" Val="1471188205"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/sha512_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../git_folder/sha512/src/rtl/sha512_core.v"/>
+        <Attr Name="ImportTime" Val="1471188205"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/sha512_v1_0_S00_AXI.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/sha512.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../git_folder/sha512/src/rtl/sha512.v"/>
+        <Attr Name="ImportTime" Val="1471188205"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/sha512_v1_0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sha512_v1_0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../hdl/sha512_v1_0.v"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,110 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sun Aug 14 10:49:06 2016
+| Host         : DESKTOP-0GOJOC6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file sha512_v1_0_control_sets_placed.rpt
+| Design       : sha512_v1_0
+| Device       : xc7z010
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    57 |
+| Unused register locations in slices containing registers |     9 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              36 |           15 |
+| No           | Yes                   | No                     |               5 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            3662 |         1494 |
+| Yes          | Yes                   | No                     |              32 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
+|       Clock Signal      |                Enable Signal                |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-------------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
+|  sha_clk_IBUF_BUFG      | inst0/core/w_mem_inst/w_ctr_we              | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |                2 |              7 |
+|  sha_clk_IBUF_BUFG      |                                             | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |                5 |             10 |
+|  s00_axi_aclk_IBUF_BUFG |                                             | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               13 |             31 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block10_we15_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               11 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block11_we16_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               13 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block12_we17_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               11 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block13_we18_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               12 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block14_we19_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |                9 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block15_we20_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |                7 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block16_we21_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               14 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block17_we22_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               11 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block18_we23_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |                9 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block19_we24_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               11 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block1_we6_out                        | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               10 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block20_we25_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               13 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block21_we26_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               15 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block22_we27_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               13 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block23_we28_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               14 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block24_we29_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               17 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block25_we30_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               16 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block26_we31_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               16 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block27_we32_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               15 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block28_we33_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               16 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block29_we34_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               12 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block2_we7_out                        | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               12 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block30_we35_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               19 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block31_we36_out                      | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               14 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block3_we8_out                        | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               12 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block4_we9_out                        | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               12 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block5_we10_out                       | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               12 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block6_we11_out                       | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               14 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block7_we12_out                       | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               20 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block8_we13_out                       | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               18 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block9_we14_out                       | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               22 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/work_factor_num_we4_out               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               10 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | sha512_v1_0_S00_AXI_inst/slv_reg_rden       | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               13 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/block0_we5_out                        | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               10 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H0_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               16 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H0_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               14 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H1_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               15 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H1_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               15 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H2_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               17 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H2_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               18 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H3_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               15 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H3_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               17 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H4_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               18 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H4_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               20 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H5_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               15 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H5_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               16 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H6_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               16 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H6_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               15 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H7_reg[31]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               14 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/H7_reg[63]_i_1_n_0               | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |               16 |             32 |
+|  sha_clk_IBUF_BUFG      | inst0/core/work_factor_ctr_reg[0]_i_1_n_0   | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |                8 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | inst0/core/E[0]                             | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |              178 |            512 |
+|  sha_clk_IBUF_BUFG      | inst0/core/a_h_we                           | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |              260 |            519 |
+|  sha_clk_IBUF_BUFG      | inst0/core/w_mem_inst/w_mem[13][63]_i_1_n_0 | inst0/core/w_mem_inst/w_ctr_reg_reg[0]_1 |              349 |           1024 |
++-------------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
+
+
