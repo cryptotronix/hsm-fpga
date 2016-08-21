@@ -10,12 +10,12 @@
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="f:/xilinx/projects/ip_repo/sha1_1.0/sha1_v1_0_project/sha1_v1_0_project.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="f:/xilinx/projects/ip_repo/sha1_1.0/sha1_v1_0_project/sha1_v1_0_project.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="f:/xilinx/projects/ip_repo/sha1_1.0/sha1_v1_0_project/sha1_v1_0_project.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="f:/xilinx/projects/ip_repo/sha1_1.0/sha1_v1_0_project/sha1_v1_0_project.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="f:/xilinx/projects/ip_repo/sha1_1.0/sha1_v1_0_project/sha1_v1_0_project.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="f:/xilinx/projects/ip_repo/sha1_1.0/sha1_v1_0_project/sha1_v1_0_project.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
