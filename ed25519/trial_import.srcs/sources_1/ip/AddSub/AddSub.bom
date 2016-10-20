@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="AddSub">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="AddSub/doc/dsp48_macro_ds754.pdf" type="ignore" timestamp="Thu Jul 14 16:32:12 2016" checksum="0">
+				</File>
+				<File name="AddSub/doc/xbip_dsp48_macro_v2_1_readme.txt" type="ignore" timestamp="Thu Jul 14 16:32:12 2016" checksum="0">
+				</File>
+				<File name="AddSub/doc/xbip_dsp48_macro_v2_1_vinfo.html" type="ignore" timestamp="Thu Jul 14 16:32:12 2016" checksum="0">
+				</File>
+				<File name="AddSub.asy" type="asy" timestamp="Thu Jul 14 16:32:05 2016" checksum="0">
+				</File>
+				<File name="AddSub.ngc" type="ngc" timestamp="Thu Jul 14 16:32:05 2016" checksum="0">
+				</File>
+				<File name="AddSub.sym" type="asy" timestamp="Thu Jul 14 16:32:05 2016" checksum="0">
+				</File>
+				<File name="AddSub.vhd" type="vhdl" timestamp="Thu Jul 14 16:32:05 2016" checksum="0">
+				</File>
+				<File name="AddSub.vho" type="vho" timestamp="Thu Jul 14 16:32:05 2016" checksum="0">
+				</File>
+				<File name="AddSub.xco" type="xco" timestamp="Thu Jul 14 16:32:05 2016" checksum="0">
+				</File>
+				<File name="AddSub_xmdf.tcl" type="ignore" timestamp="Thu Jul 14 16:32:06 2016" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

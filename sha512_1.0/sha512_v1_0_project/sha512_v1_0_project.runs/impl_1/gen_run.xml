@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1471193290">
-  <File Type="OPT-DCP" Name="sha512_v1_0_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="sha512_v1_0_route_status.pb"/>
   <File Type="PA-TCL" Name="sha512_v1_0.tcl"/>
+  <File Type="OPT-DCP" Name="sha512_v1_0_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="sha512_v1_0_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sha512_v1_0_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="sha512_v1_0.vdi"/>
   <File Type="PWROPT-DRC" Name="sha512_v1_0_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="sha512_v1_0_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="sha512_v1_0_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="sha512_v1_0_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="sha512_v1_0_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="sha512_v1_0.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="sha512_v1_0_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="sha512_v1_0_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="sha512_v1_0_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="sha512_v1_0.bit"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sha512_v1_0_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="sha512_v1_0.bit"/>
   <File Type="ROUTE-PWR" Name="sha512_v1_0_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="sha512_v1_0_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="sha512_v1_0_power_routed.rpx"/>

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="F:/Xilinx/Projects/ip_repo/chacha_customip_trial_1.0/chacha_customip_trial_v1_0_project/chacha_customip_trial_v1_0_project.xpr">
+<Project Version="7" Minor="14" Path="F:/Xilinx/Projects/ip_repo/chacha_1.0/chacha_customip_trial_v1_0_project/chacha_customip_trial_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3b27da6a629940b3b41e00b57a8cd3ab"/>

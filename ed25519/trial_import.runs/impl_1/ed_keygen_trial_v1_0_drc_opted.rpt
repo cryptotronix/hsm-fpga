@@ -1,0 +1,285 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Thu Oct 20 20:00:45 2016
+| Host         : DESKTOP-0GOJOC6 running 64-bit major release  (build 9200)
+| Command      : report_drc -file ed_keygen_trial_v1_0_drc_opted.rpt
+| Design       : ed_keygen_trial_v1_0
+| Device       : xc7z020clg484-3
+| Speed File   : -3
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 51
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+97 out of 97 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: s00_axi_awaddr[7], s00_axi_awaddr[6], s00_axi_awaddr[5], s00_axi_awaddr[4], s00_axi_awaddr[3], s00_axi_awaddr[2], s00_axi_wdata[31:0], s00_axi_wstrb[3:0], s00_axi_bresp[1:0], s00_axi_araddr[7], s00_axi_araddr[6], s00_axi_araddr[5], s00_axi_araddr[4], s00_axi_araddr[3], s00_axi_araddr[2] (the first 15 of 30 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+97 out of 97 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: s00_axi_awaddr[7], s00_axi_awaddr[6], s00_axi_awaddr[5], s00_axi_awaddr[4], s00_axi_awaddr[3], s00_axi_awaddr[2], s00_axi_wdata[31:0], s00_axi_wstrb[3:0], s00_axi_bresp[1:0], s00_axi_araddr[7], s00_axi_araddr[6], s00_axi_araddr[5], s00_axi_araddr[4], s00_axi_araddr[3], s00_axi_araddr[2] (the first 15 of 30 listed).
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004 input Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004 input Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004 input Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP Core1/AU/Addition/Reduction/DSP/blk00000001/blk00000004 input Core1/AU/Addition/Reduction/DSP/blk00000001/blk00000004/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP Core1/AU/Multiplication/Acc/Operation/Acc_DSP/blk00000001/blk00000004 input Core1/AU/Multiplication/Acc/Operation/Acc_DSP/blk00000001/blk00000004/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP Core1/AU/Multiplication/Acc/Reduction/Fin_DSP/blk00000001/blk00000004 input Core1/AU/Multiplication/Acc/Reduction/Fin_DSP/blk00000001/blk00000004/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP Core1/AU/Multiplication/Mul/Prereduction/Pre_DSP/blk00000001/blk00000004 input Core1/AU/Multiplication/Mul/Prereduction/Pre_DSP/blk00000001/blk00000004/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP Core1/AU/Addition/Reduction/DSP/blk00000001/blk00000004 output Core1/AU/Addition/Reduction/DSP/blk00000001/blk00000004/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP Core1/AU/Multiplication/Acc/Reduction/Fin_DSP/blk00000001/blk00000004 output Core1/AU/Multiplication/Acc/Reduction/Fin_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/Prereduction/Pre_DSP/blk00000001/blk00000004 output Core1/AU/Multiplication/Mul/Prereduction/Pre_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Acc/Reduction/Fin_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Acc/Reduction/Fin_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[0].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[0].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[10].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[10].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[11].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[11].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[12].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[12].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[13].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[13].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[14].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[14].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[1].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[1].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[2].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[2].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[3].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[3].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[4].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[4].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[5].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[5].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[6].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[6].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[7].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[7].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[8].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[8].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP Core1/AU/Multiplication/Mul/MACC_DSP[9].Operation/Macc_DSP/blk00000001/blk00000004 multiplier stage Core1/AU/Multiplication/Mul/MACC_DSP[9].Operation/Macc_DSP/blk00000001/blk00000004/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPREG-4#1 Warning
+DSP48E1_PregDynOpmodeZmuxP:  
+The DSP48E1 cell Core1/AU/Addition/Reduction/DSP/blk00000001/blk00000004 with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Addition/Reduction/DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Acc/Reduction/Fin_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[0].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[10].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[11].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[12].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[13].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[14].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[1].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[2].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[3].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[4].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[5].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[6].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[7].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[8].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#18 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/MACC_DSP[9].Operation/Macc_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#19 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Multiplication/Mul/Prereduction/Pre_DSP/blk00000001/blk00000004: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Addition/Operation/DSP/blk00000001/blk00000004: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+Core1/AU/Addition/Reduction/DSP/blk00000001/blk00000004: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

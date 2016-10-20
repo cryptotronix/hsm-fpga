@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="Acc">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="Acc/doc/dsp48_macro_ds754.pdf" type="ignore" timestamp="Thu Jul 14 16:32:11 2016" checksum="0">
+				</File>
+				<File name="Acc/doc/xbip_dsp48_macro_v2_1_readme.txt" type="ignore" timestamp="Thu Jul 14 16:32:11 2016" checksum="0">
+				</File>
+				<File name="Acc/doc/xbip_dsp48_macro_v2_1_vinfo.html" type="ignore" timestamp="Thu Jul 14 16:32:11 2016" checksum="0">
+				</File>
+				<File name="Acc.asy" type="asy" timestamp="Thu Jul 14 16:32:04 2016" checksum="0">
+				</File>
+				<File name="Acc.ngc" type="ngc" timestamp="Thu Jul 14 16:32:04 2016" checksum="0">
+				</File>
+				<File name="Acc.sym" type="asy" timestamp="Thu Jul 14 16:32:04 2016" checksum="0">
+				</File>
+				<File name="Acc.vhd" type="vhdl" timestamp="Thu Jul 14 16:32:04 2016" checksum="0">
+				</File>
+				<File name="Acc.vho" type="vho" timestamp="Thu Jul 14 16:32:04 2016" checksum="0">
+				</File>
+				<File name="Acc.xco" type="xco" timestamp="Thu Jul 14 16:32:04 2016" checksum="0">
+				</File>
+				<File name="Acc_xmdf.tcl" type="ignore" timestamp="Thu Jul 14 16:32:04 2016" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

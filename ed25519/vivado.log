@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Aug 17 21:38:20 2016
+# Process ID: 21944
+# Current directory: F:/Xilinx/Projects/trial_import
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15872 F:\Xilinx\Projects\trial_import\trial_import.xpr
+# Log file: F:/Xilinx/Projects/trial_import/vivado.log
+# Journal file: F:/Xilinx/Projects/trial_import\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx/Projects/trial_import/trial_import.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/Projects/trial_import'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'Pre' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Pre' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'MACC' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'MACC' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'Fin' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Fin' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'Acc' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Acc' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'Reduce' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Reduce' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'AddSub' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'AddSub' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'DPBRAM' is locked:
+* IP definition 'Block Memory Generator (7.3)' for IP 'DPBRAM' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 771.422 ; gain = 123.648
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 19 10:13:32 2016...

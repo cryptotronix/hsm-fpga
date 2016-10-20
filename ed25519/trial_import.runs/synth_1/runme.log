@@ -1,0 +1,1147 @@
+
+*** Running vivado
+    with args -log ed_keygen_trial_v1_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ed_keygen_trial_v1_0.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source ed_keygen_trial_v1_0.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at F:/Xilinx/Vivado/2016.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top ed_keygen_trial_v1_0 -part xc7z020clg484-3
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'Pre' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Pre' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'MACC' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'MACC' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'Fin' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Fin' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'Acc' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Acc' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'Reduce' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'Reduce' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'AddSub' is locked:
+* IP definition 'DSP48 Macro (2.1)' for IP 'AddSub' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'DPBRAM' is locked:
+* IP definition 'Block Memory Generator (7.3)' for IP 'DPBRAM' has a newer major version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9860 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 293.785 ; gain = 86.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ed_keygen_trial_v1_0' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Curve25519Core' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Curve25519Core.vhd:53]
+INFO: [Synth 8-3491] module 'ArithmeticUnit' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:37' bound to instance 'AU' of component 'ArithmeticUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Curve25519Core.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'ArithmeticUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:66]
+INFO: [Synth 8-3491] module 'BRAM_DualPort' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/BRAM_DualPort.vhd:39' bound to instance 'BRAM1' of component 'BRAM_DualPort' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'BRAM_DualPort' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/BRAM_DualPort.vhd:59]
+INFO: [Synth 8-3491] module 'DPBRAM' declared at 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/DPBRAM/DPBRAM.vhd:43' bound to instance 'BlockRAM' of component 'DPBRAM' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/BRAM_DualPort.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'DPBRAM' [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/DPBRAM/DPBRAM.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'DPBRAM' (1#1) [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/DPBRAM/DPBRAM.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_DualPort' (2#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/BRAM_DualPort.vhd:59]
+INFO: [Synth 8-3491] module 'BRAM_DualPort' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/BRAM_DualPort.vhd:39' bound to instance 'BRAM2' of component 'BRAM_DualPort' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:202]
+INFO: [Synth 8-3491] module 'AdditionUnit' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/AdditionUnit.vhd:38' bound to instance 'Addition' of component 'AdditionUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'AdditionUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/AdditionUnit.vhd:58]
+INFO: [Synth 8-3491] module 'DSP_Addition_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Addition_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/AdditionUnit.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'DSP_Addition_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Operation.vhd:55]
+INFO: [Synth 8-3491] module 'AddSub' declared at 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/AddSub/AddSub.vhd:43' bound to instance 'DSP' of component 'AddSub' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Operation.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'AddSub' [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/AddSub/AddSub.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'AddSub' (3#1) [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/AddSub/AddSub.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'DSP_Addition_Operation' (4#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Operation.vhd:55]
+INFO: [Synth 8-3491] module 'DSP_Addition_Reduction' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Reduction.vhd:36' bound to instance 'Reduction' of component 'DSP_Addition_Reduction' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/AdditionUnit.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'DSP_Addition_Reduction' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Reduction.vhd:55]
+INFO: [Synth 8-3491] module 'Reduce' declared at 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Reduce/Reduce.vhd:43' bound to instance 'DSP' of component 'Reduce' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Reduction.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Reduce' [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Reduce/Reduce.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Reduce' (5#1) [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Reduce/Reduce.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'DSP_Addition_Reduction' (6#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Reduction.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'AdditionUnit' (7#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/AdditionUnit.vhd:58]
+INFO: [Synth 8-3491] module 'MultiplicationUnit' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:37' bound to instance 'Multiplication' of component 'MultiplicationUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'MultiplicationUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:55]
+INFO: [Synth 8-3491] module 'LoadUnit' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/LoadUnit.vhd:36' bound to instance 'Load' of component 'LoadUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'LoadUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/LoadUnit.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'LoadUnit' (8#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/LoadUnit.vhd:53]
+INFO: [Synth 8-3491] module 'RotateUnit' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/RotateUnit.vhd:36' bound to instance 'Rotate' of component 'RotateUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'RotateUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/RotateUnit.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'RotateUnit' (9#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/RotateUnit.vhd:54]
+INFO: [Synth 8-3491] module 'MultiplyUnit' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:37' bound to instance 'Mul' of component 'MultiplyUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'MultiplyUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:54]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Prereduction' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Prereduction.vhd:37' bound to instance 'Prereduction' of component 'DSP_Multiply_Prereduction' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'DSP_Multiply_Prereduction' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Prereduction.vhd:52]
+INFO: [Synth 8-3491] module 'Pre' declared at 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Pre/Pre.vhd:43' bound to instance 'Pre_DSP' of component 'PRE' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Prereduction.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Pre' [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Pre/Pre.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'Pre' (10#1) [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Pre/Pre.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'DSP_Multiply_Prereduction' (11#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Prereduction.vhd:52]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:52]
+INFO: [Synth 8-3491] module 'MACC' declared at 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/MACC/MACC.vhd:43' bound to instance 'Macc_DSP' of component 'MACC' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'MACC' [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/MACC/MACC.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'MACC' (12#1) [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/MACC/MACC.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'DSP_Multiply_Operation' (13#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:52]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-3491] module 'DSP_Multiply_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:36' bound to instance 'Operation' of component 'DSP_Multiply_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'MultiplyUnit' (14#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplyUnit.vhd:54]
+INFO: [Synth 8-3491] module 'MulRegister' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MulRegister.vhd:36' bound to instance 'Reg' of component 'MulRegister' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'MulRegister' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MulRegister.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'MulRegister' (15#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MulRegister.vhd:51]
+INFO: [Synth 8-3491] module 'Accumulate' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Accumulate.vhd:37' bound to instance 'Acc' of component 'Accumulate' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'Accumulate' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Accumulate.vhd:53]
+INFO: [Synth 8-3491] module 'DSP_Accumulate_Operation' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Operation.vhd:37' bound to instance 'Operation' of component 'DSP_Accumulate_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Accumulate.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'DSP_Accumulate_Operation' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Operation.vhd:56]
+INFO: [Synth 8-3491] module 'Acc' declared at 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Acc/Acc.vhd:43' bound to instance 'Acc_DSP' of component 'Acc' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Operation.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'Acc' [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Acc/Acc.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'Acc' (16#1) [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Acc/Acc.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'DSP_Accumulate_Operation' (17#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Operation.vhd:56]
+INFO: [Synth 8-3491] module 'DSP_Accumulate_Reduction' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Reduction.vhd:37' bound to instance 'Reduction' of component 'DSP_Accumulate_Reduction' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Accumulate.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'DSP_Accumulate_Reduction' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Reduction.vhd:55]
+INFO: [Synth 8-3491] module 'Fin' declared at 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Fin/Fin.vhd:43' bound to instance 'Fin_DSP' of component 'Fin' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Reduction.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Fin' [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Fin/Fin.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'Fin' (18#1) [f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Fin/Fin.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'DSP_Accumulate_Reduction' (19#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Reduction.vhd:55]
+INFO: [Synth 8-3491] module 'CarryEstimator' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/CarryEstimator.vhd:36' bound to instance 'Estimator' of component 'CarryEstimator' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Accumulate.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'CarryEstimator' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/CarryEstimator.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'CarryEstimator' (20#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/CarryEstimator.vhd:47]
+WARNING: [Synth 8-614] signal 'FLAG' is read in the process but is not in the sensitivity list [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Accumulate.vhd:212]
+INFO: [Synth 8-256] done synthesizing module 'Accumulate' (21#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Accumulate.vhd:53]
+INFO: [Synth 8-3491] module 'StoreUnit' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/StoreUnit.vhd:36' bound to instance 'Store' of component 'StoreUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'StoreUnit' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/StoreUnit.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'StoreUnit' (22#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/StoreUnit.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'MultiplicationUnit' (23#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/MultiplicationUnit.vhd:55]
+INFO: [Synth 8-3491] module 'Flag_Register' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Flag_Register.vhd:38' bound to instance 'FlagRegister' of component 'Flag_Register' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'Flag_Register' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Flag_Register.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Flag_Register' (24#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Flag_Register.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'ArithmeticUnit' (25#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/ArithmeticUnit.vhd:66]
+INFO: [Synth 8-3491] module 'LSR255' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/LSR255.vhd:36' bound to instance 'LSR' of component 'LSR255' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Curve25519Core.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'LSR255' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/LSR255.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'LSR255' (26#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/LSR255.vhd:52]
+	Parameter WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Counter.vhd:37' bound to instance 'ClockCounter' of component 'Counter' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Curve25519Core.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'Counter' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Counter.vhd:49]
+	Parameter WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (27#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Counter.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Curve25519Core' (28#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/Curve25519Core.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'ed_keygen_trial_v1_0_S00_AXI' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 5 - type: integer 
+	Parameter idle_state bound to: 0 - type: integer 
+	Parameter result_state bound to: 1 - type: integer 
+	Parameter done_state bound to: 2 - type: integer 
+	Parameter reset_state bound to: 3 - type: integer 
+	Parameter loadp_state bound to: 4 - type: integer 
+	Parameter loadk_state bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0_S00_AXI.v:383]
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0_S00_AXI.v:1004]
+INFO: [Synth 8-256] done synthesizing module 'ed_keygen_trial_v1_0_S00_AXI' (29#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ed_keygen_trial_v1_0' (30#1) [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0.v:4]
+WARNING: [Synth 8-3331] design ed_keygen_trial_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design ed_keygen_trial_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design ed_keygen_trial_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design ed_keygen_trial_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design ed_keygen_trial_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design ed_keygen_trial_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design Accumulate has unconnected port SUMS[644]
+WARNING: [Synth 8-3331] design Accumulate has unconnected port SUMS[643]
+WARNING: [Synth 8-3331] design Accumulate has unconnected port SUMS[642]
+WARNING: [Synth 8-3331] design Accumulate has unconnected port SUMS[641]
+WARNING: [Synth 8-3331] design Accumulate has unconnected port SUMS[640]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[254]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[253]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[252]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[251]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[250]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[249]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[248]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[247]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[246]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[245]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[244]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[243]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[242]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[241]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[240]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[239]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[238]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[237]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[236]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[235]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[234]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[233]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[232]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[231]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[230]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[229]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[228]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[227]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[226]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[225]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[224]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[223]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[222]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[221]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[220]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[219]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[218]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[217]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[216]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[215]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[214]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[213]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[212]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[211]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[210]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[209]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[208]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[207]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[206]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[205]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[204]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[203]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[202]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[201]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[200]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[199]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[198]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[197]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[196]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[195]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[194]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[193]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[192]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[191]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[190]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[189]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[188]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[187]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[186]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[185]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[184]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[183]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[182]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[181]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[180]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[179]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[178]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[177]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[176]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[175]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[174]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[173]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[172]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[171]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[170]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[169]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[168]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[167]
+WARNING: [Synth 8-3331] design MultiplyUnit has unconnected port B[166]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 382.113 ; gain = 174.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 382.113 ; gain = 174.816
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Acc' instantiated as 'Core1/AU/Multiplication/Acc/Operation/Acc_DSP' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Operation.vhd:97]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'AddSub' instantiated as 'Core1/AU/Addition/Operation/DSP' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Operation.vhd:90]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'DPBRAM' instantiated as 'Core1/AU/BRAM1/BlockRAM'. 2 instances of this cell are unresolved black boxes. [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/BRAM_DualPort.vhd:108]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Fin' instantiated as 'Core1/AU/Multiplication/Acc/Reduction/Fin_DSP' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Accumulate_Reduction.vhd:89]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'MACC' instantiated as 'Core1/AU/Multiplication/Mul/MACC_DSP[0].Operation/Macc_DSP'. 15 instances of this cell are unresolved black boxes. [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Operation.vhd:86]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Pre' instantiated as 'Core1/AU/Multiplication/Mul/Prereduction/Pre_DSP' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Multiply_Prereduction.vhd:84]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Reduce' instantiated as 'Core1/AU/Addition/Reduction/DSP' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/sources/DSP_Addition_Reduction.vhd:89]
+INFO: [Device 21-403] Loading part xc7z020clg484-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Xilinx/Projects/trial_import/trial_import.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Xilinx/Projects/trial_import/trial_import.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 713.965 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 713.965 ; gain = 506.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 713.965 ; gain = 506.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Core1/AU/Addition/Operation/DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Addition/Reduction/DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/BRAM1/BlockRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/BRAM2/BlockRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Acc/Operation/Acc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Acc/Reduction/Fin_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[0].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[10].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[11].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[12].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[13].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[14].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[1].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[2].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[3].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[4].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[5].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[6].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[7].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[8].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/\MACC_DSP[9].Operation /Macc_DSP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Core1/AU/Multiplication/Mul/Prereduction/Pre_DSP. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 713.965 ; gain = 506.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'AdditionUnit'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MultiplyUnit'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'Accumulate'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MultiplicationUnit'
+INFO: [Synth 8-5546] ROM "DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RESET_MULTIPLY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RESET_LOAD" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ENABLE_ROTATE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LOAD_ROTATE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RESET_ROTATE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ENABLE_MULTIPLY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ENABLE_REGISTER" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RESET_REGISTER" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NEXT_STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'ArithmeticUnit'
+INFO: [Synth 8-5546] ROM "M_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "T_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "A_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NEXT_STATE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "T_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "T_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ENABLE_OUTPUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ERROR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IDLE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NEXT_STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'Curve25519Core'
+INFO: [Synth 8-5546] ROM "AU_POINT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU_DOUBLE_ADD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IDLE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COMPUTING" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ERROR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RET_RES" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NEXT_STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CMD_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CE_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "result" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_reset |                             0000 |                             0000
+                  s_idle |                             0001 |                             0001
+                  s_run1 |                             0010 |                             0010
+                  s_run2 |                             0011 |                             0011
+                  s_run3 |                             0100 |                             0100
+                  s_run4 |                             0101 |                             0101
+                  s_run5 |                             0110 |                             0110
+                  s_run6 |                             0111 |                             0111
+                  s_run7 |                             1000 |                             1000
+                  s_run8 |                             1001 |                             1001
+                  s_done |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'AdditionUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_reset |                            00000 |                            00000
+                  s_idle |                            00001 |                            00001
+                  s_mul1 |                            00010 |                            00010
+                  s_mul2 |                            00011 |                            00011
+                  s_mul3 |                            00100 |                            00100
+                  s_mul4 |                            00101 |                            00101
+                  s_mul5 |                            00110 |                            00110
+                  s_mul6 |                            00111 |                            00111
+                  s_mul7 |                            01000 |                            01000
+                  s_mul8 |                            01001 |                            01001
+                  s_mul9 |                            01010 |                            01010
+                 s_mul10 |                            01011 |                            01011
+                 s_mul11 |                            01100 |                            01100
+                 s_mul12 |                            01101 |                            01101
+                 s_mul13 |                            01110 |                            01110
+                 s_mul14 |                            01111 |                            01111
+                 s_mul15 |                            10000 |                            10000
+                 s_mul16 |                            10001 |                            10001
+                  s_done |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'MultiplyUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_reset |                            00000 |                            00000
+                  s_idle |                            00001 |                            00001
+                  s_run1 |                            00010 |                            00010
+                  s_run2 |                            00011 |                            00011
+                  s_run3 |                            00100 |                            00100
+                  s_run4 |                            00101 |                            00101
+                  s_run5 |                            00110 |                            00110
+                  s_run6 |                            00111 |                            00111
+                  s_run7 |                            01000 |                            01000
+                  s_run8 |                            01001 |                            01001
+                  s_run9 |                            01010 |                            01010
+                 s_run10 |                            01011 |                            01011
+                 s_run11 |                            01100 |                            01100
+                 s_run12 |                            01101 |                            01101
+                 s_run13 |                            01110 |                            01110
+                 s_run14 |                            01111 |                            01111
+                 s_run15 |                            10000 |                            10000
+                 s_run16 |                            10001 |                            10001
+                  s_done |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'Accumulate'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_reset |                              000 |                              000
+                  s_idle |                              001 |                              001
+                  s_load |                              010 |                              010
+                s_ld_rot |                              011 |                              011
+               s_mul_acc |                              100 |                              100
+                   s_mux |                              101 |                              101
+                 s_store |                              110 |                              110
+                  s_done |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'MultiplicationUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_reset |                           000000 |                           000000
+                  s_idle |                           000001 |                           000001
+                   s_get |                           000010 |                           000010
+                   s_set |                           000011 |                           000011
+                  s_add1 |                           000100 |                           000100
+                  s_mul1 |                           000101 |                           001110
+                  s_sub1 |                           000110 |                           001000
+                  s_mul2 |                           000111 |                           001111
+                  s_add2 |                           001000 |                           000101
+                  s_mul3 |                           001001 |                           010000
+                  s_sub2 |                           001010 |                           001001
+                  s_mul4 |                           001011 |                           010001
+                s_trans1 |                           001100 |                           001100
+                 s_mul11 |                           001101 |                           011000
+                  s_sub3 |                           001110 |                           001010
+                  s_mul5 |                           001111 |                           010010
+                  s_sub4 |                           010000 |                           001011
+                  s_mul6 |                           010001 |                           010011
+                  s_add3 |                           010010 |                           000110
+                  s_mul8 |                           010011 |                           010101
+                  s_add4 |                           010100 |                           000111
+                  s_mul9 |                           010101 |                           010110
+                s_trans2 |                           010110 |                           001101
+                  s_mul7 |                           010111 |                           010100
+                 s_wait1 |                           011000 |                           011001
+                 s_mul10 |                           011001 |                           010111
+                s_store1 |                           011010 |                           011100
+                 s_wait2 |                           011011 |                           011010
+                s_store2 |                           011100 |                           011101
+                 s_wait3 |                           011101 |                           011011
+                s_store3 |                           011110 |                           011110
+                   s_mul |                           011111 |                           011111
+                  s_done |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'ArithmeticUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_reset | 000000000000000000000000000000000000000000001 |                           000000
+                  s_idle | 000000000000000000000000000000000000000000010 |                           000001
+                s_load_p | 000000000000000000000000000000000000000000100 |                           000010
+                s_load_z | 000000000000000000000000000000000000000001000 |                           000011
+               s_load_x0 | 000000000000000000000000000000000000000010000 |                           000100
+               s_load_z0 | 000000000000000000000000000000000000000100000 |                           000101
+                s_load_k | 000000000000000000000000000000000000001000000 |                           000110
+               s_compute | 000000000000000000000000000000000000010000000 |                           000111
+                s_invert | 000000000000000000000000000000000000100000000 |                           001000
+                s_comp_2 | 000000000000000000000000000000000001000000000 |                           001011
+                s_comp_4 | 000000000000000000000000000000000010000000000 |                           001100
+                s_comp_8 | 000000000000000000000000000000000100000000000 |                           001101
+                s_comp_9 | 000000000000000000000000000000001000000000000 |                           001110
+               s_comp_11 | 000000000000000000000000000000010000000000000 |                           001111
+               s_comp_22 | 000000000000000000000000000000100000000000000 |                           010000
+            s_comp_2_5_0 | 000000000000000000000000000001000000000000000 |                           010001
+            s_comp_2_6_1 | 000000000000000000000000000010000000000000000 |                           010010
+           s_comp_2_10_5 | 000000000000000000000000000100000000000000000 |                           010011
+           s_comp_2_10_0 | 000000000000000000000000001000000000000000000 |                           010100
+           s_comp_2_11_1 | 000000000000000000000000010000000000000000000 |                           010101
+          s_comp_2_20_10 | 000000000000000000000000100000000000000000000 |                           010110
+           s_comp_2_20_0 | 000000000000000000000001000000000000000000000 |                           010111
+           s_comp_2_21_1 | 000000000000000000000010000000000000000000000 |                           011000
+          s_comp_2_40_20 | 000000000000000000000100000000000000000000000 |                           011001
+           s_comp_2_40_0 | 000000000000000000001000000000000000000000000 |                           011010
+           s_comp_2_41_1 | 000000000000000000010000000000000000000000000 |                           011011
+          s_comp_2_50_10 | 000000000000000000100000000000000000000000000 |                           011100
+           s_comp_2_50_0 | 000000000000000001000000000000000000000000000 |                           011101
+           s_comp_2_51_1 | 000000000000000010000000000000000000000000000 |                           011110
+         s_comp_2_100_50 | 000000000000000100000000000000000000000000000 |                           011111
+          s_comp_2_100_0 | 000000000000001000000000000000000000000000000 |                           100000
+          s_comp_2_101_1 | 000000000000010000000000000000000000000000000 |                           100001
+        s_comp_2_200_100 | 000000000000100000000000000000000000000000000 |                           100010
+          s_comp_2_200_0 | 000000000001000000000000000000000000000000000 |                           100011
+         s_comp_2_250_50 | 000000000010000000000000000000000000000000000 |                           100100
+          s_comp_2_250_0 | 000000000100000000000000000000000000000000000 |                           100101
+          s_comp_2_251_1 | 000000001000000000000000000000000000000000000 |                           100110
+          s_comp_2_252_2 | 000000010000000000000000000000000000000000000 |                           100111
+          s_comp_2_253_3 | 000000100000000000000000000000000000000000000 |                           101000
+          s_comp_2_254_4 | 000001000000000000000000000000000000000000000 |                           101001
+          s_comp_2_255_5 | 000010000000000000000000000000000000000000000 |                           101010
+            s_comp_final | 000100000000000000000000000000000000000000000 |                           101011
+                   s_mul | 001000000000000000000000000000000000000000000 |                           101100
+                s_result | 010000000000000000000000000000000000000000000 |                           001001
+                  s_done | 100000000000000000000000000000000000000000000 |                           001010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'Curve25519Core'
+WARNING: [Synth 8-327] inferring latch for variable 'resp_flag_reg' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0_S00_AXI.v:1135]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [F:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/imports/hdl/ed_keygen_trial_v1_0_S00_AXI.v:1096]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 713.965 ; gain = 506.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |ed_keygen_trial_v1_0_S00_AXI |           1|     44621|
+|2     |Curve25519Core               |           1|      9995|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     19 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	              645 Bit    Registers := 1     
+	              272 Bit    Registers := 2     
+	              256 Bit    Registers := 3     
+	              255 Bit    Registers := 7     
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 65    
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  10 Input    256 Bit        Muxes := 1     
+	   2 Input    256 Bit        Muxes := 6     
+	   4 Input    256 Bit        Muxes := 1     
+	   2 Input    255 Bit        Muxes := 7     
+	   3 Input    255 Bit        Muxes := 1     
+	  50 Input     45 Bit        Muxes := 1     
+	  19 Input     43 Bit        Muxes := 1     
+	  11 Input     34 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 5     
+	  45 Input     34 Bit        Muxes := 1     
+	   3 Input     34 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 136   
+	   2 Input     22 Bit        Muxes := 14    
+	  19 Input     21 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  19 Input     17 Bit        Muxes := 1     
+	  19 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	  19 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  33 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  37 Input      6 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  33 Input      4 Bit        Muxes := 8     
+	  45 Input      4 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 65    
+	  19 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 11    
+	  33 Input      1 Bit        Muxes := 19    
+	  45 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BRAM_DualPort__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module BRAM_DualPort 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module AdditionUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input     34 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module LoadUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	              272 Bit    Registers := 2     
+Module RotateUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	              255 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    255 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module MultiplyUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 14    
+	  19 Input     14 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 4     
+Module MulRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	              645 Bit    Registers := 1     
+Module CarryEstimator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     19 Bit       Adders := 1     
+Module Accumulate 
+Detailed RTL Component Info : 
++---Registers : 
+	              255 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    255 Bit        Muxes := 1     
+	  19 Input     43 Bit        Muxes := 1     
+	  19 Input     21 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  19 Input     17 Bit        Muxes := 1     
+	  19 Input      9 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 5     
+Module StoreUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	              255 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    255 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MultiplicationUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 11    
+Module Flag_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module ArithmeticUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	  33 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  37 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  33 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  33 Input      1 Bit        Muxes := 19    
+Module LSR255 
+Detailed RTL Component Info : 
++---Registers : 
+	              255 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    255 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Curve25519Core 
+Detailed RTL Component Info : 
++---Muxes : 
+	  50 Input     45 Bit        Muxes := 1     
+	  45 Input     34 Bit        Muxes := 1     
+	  45 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+	  45 Input      1 Bit        Muxes := 8     
+Module ed_keygen_trial_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	              256 Bit    Registers := 3     
+	              255 Bit    Registers := 1     
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 65    
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  10 Input    256 Bit        Muxes := 1     
+	   2 Input    256 Bit        Muxes := 6     
+	   4 Input    256 Bit        Muxes := 1     
+	   2 Input    255 Bit        Muxes := 2     
+	   3 Input    255 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   3 Input     34 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 136   
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 38    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 713.965 ; gain = 506.668
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "AU/Multiplication/DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU/Multiplication/RESET_MULTIPLY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU/T_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU/T_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU/A_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU/M_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU/NEXT_STATE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TIMER_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AU_POINT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CMD_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CE_r" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 713.965 ; gain = 506.668
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 713.965 ; gain = 506.668
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |ed_keygen_trial_v1_0_S00_AXI |           1|     44776|
+|2     |Curve25519Core               |           1|     12652|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------------------+---------------+----------------+
+|Module Name    | RTL Object             | Depth x Width | Implemented As | 
++---------------+------------------------+---------------+----------------+
+|Curve25519Core | AU/Multiplication/Mul/ | 32x14         | LUT            | 
++---------------+------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (AU/Multiplication/Reg/STATE_reg[644]) is unused and will be removed from module Curve25519Core.
+WARNING: [Synth 8-3332] Sequential element (AU/Multiplication/Reg/STATE_reg[643]) is unused and will be removed from module Curve25519Core.
+WARNING: [Synth 8-3332] Sequential element (AU/Multiplication/Reg/STATE_reg[642]) is unused and will be removed from module Curve25519Core.
+WARNING: [Synth 8-3332] Sequential element (AU/Multiplication/Reg/STATE_reg[641]) is unused and will be removed from module Curve25519Core.
+WARNING: [Synth 8-3332] Sequential element (AU/Multiplication/Reg/STATE_reg[640]) is unused and will be removed from module Curve25519Core.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ed_keygen_trial_v1_0_S00_AXI_inst/\next_state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'ed_keygen_trial_v1_0_S00_AXI_inst/CMD_r_reg[5]' (FDCE) to 'ed_keygen_trial_v1_0_S00_AXI_inst/CMD_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ed_keygen_trial_v1_0_S00_AXI_inst/CMD_r_reg[6]' (FDCE) to 'ed_keygen_trial_v1_0_S00_AXI_inst/CMD_r_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ed_keygen_trial_v1_0_S00_AXI_inst/\CMD_r_reg[7] )
+INFO: [Synth 8-3886] merging instance 'ed_keygen_trial_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'ed_keygen_trial_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ed_keygen_trial_v1_0_S00_AXI_inst/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'ed_keygen_trial_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'ed_keygen_trial_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ed_keygen_trial_v1_0_S00_AXI_inst/\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (state_r_reg[3]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (next_state_reg[3]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[0]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[255]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[254]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[253]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[252]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[251]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[250]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[249]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[248]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[247]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[246]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[245]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[244]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[243]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[242]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[241]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[240]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[239]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (result_reg[238]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[0]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (CMD_r_reg[7]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (CMD_r_reg[6]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (CMD_r_reg[5]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (Kc_r_reg[255]) is unused and will be removed from module ed_keygen_trial_v1_0_S00_AXI.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:44 . Memory (MB): peak = 713.965 ; gain = 506.668
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:21 ; elapsed = 00:01:44 . Memory (MB): peak = 713.965 ; gain = 506.668
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |ed_keygen_trial_v1_0_S00_AXI |           1|      9463|
+|2     |Curve25519Core               |           1|     10896|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:02:02 . Memory (MB): peak = 721.227 ; gain = 513.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:02:02 . Memory (MB): peak = 721.234 ; gain = 513.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |ed_keygen_trial_v1_0_S00_AXI |           1|      9463|
+|2     |Curve25519Core               |           1|     10896|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:44 ; elapsed = 00:02:09 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:44 ; elapsed = 00:02:09 . Memory (MB): peak = 748.488 ; gain = 541.191
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:44 ; elapsed = 00:02:09 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:02:11 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:47 ; elapsed = 00:02:11 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:02:12 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:02:12 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:02:14 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:02:14 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |AddSub        |         1|
+|2     |Reduce        |         1|
+|3     |DPBRAM        |         2|
+|4     |Acc           |         1|
+|5     |Fin           |         1|
+|6     |MACC          |        15|
+|7     |Pre           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |Acc       |     1|
+|2     |AddSub    |     1|
+|3     |DPBRAM    |     1|
+|4     |DPBRAM__2 |     1|
+|5     |Fin       |     1|
+|6     |MACC      |     1|
+|7     |MACC__15  |     1|
+|8     |MACC__16  |     1|
+|9     |MACC__17  |     1|
+|10    |MACC__18  |     1|
+|11    |MACC__19  |     1|
+|12    |MACC__20  |     1|
+|13    |MACC__21  |     1|
+|14    |MACC__22  |     1|
+|15    |MACC__23  |     1|
+|16    |MACC__24  |     1|
+|17    |MACC__25  |     1|
+|18    |MACC__26  |     1|
+|19    |MACC__27  |     1|
+|20    |MACC__28  |     1|
+|21    |Pre       |     1|
+|22    |Reduce    |     1|
+|23    |BUFG      |     2|
+|24    |CARRY4    |     8|
+|25    |LUT1      |    14|
+|26    |LUT2      |   161|
+|27    |LUT3      |   849|
+|28    |LUT4      |   601|
+|29    |LUT5      |   923|
+|30    |LUT6      |  1813|
+|31    |MUXF7     |   274|
+|32    |MUXF8     |   128|
+|33    |FDCE      |  1079|
+|34    |FDPE      |     1|
+|35    |FDRE      |  4931|
+|36    |FDSE      |     3|
+|37    |LD        |     3|
+|38    |LDCP      |     2|
+|39    |IBUF      |    56|
+|40    |OBUF      |    41|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------------------+-----------------------------------+------+
+|      |Instance                            |Module                             |Cells |
++------+------------------------------------+-----------------------------------+------+
+|1     |top                                 |                                   | 11908|
+|2     |  Core1                             |Curve25519Core                     |  5951|
+|3     |    AU                              |ArithmeticUnit                     |  5281|
+|4     |      Addition                      |AdditionUnit                       |    92|
+|5     |        Operation                   |DSP_Addition_Operation             |    37|
+|6     |        Reduction                   |DSP_Addition_Reduction             |    40|
+|7     |      BRAM1                         |BRAM_DualPort__xdcDup__1           |   110|
+|8     |      BRAM2                         |BRAM_DualPort                      |   252|
+|9     |      FlagRegister                  |Flag_Register                      |    34|
+|10    |      Multiplication                |MultiplicationUnit                 |  4736|
+|11    |        Acc                         |Accumulate                         |   906|
+|12    |          Estimator                 |CarryEstimator                     |     5|
+|13    |          Operation                 |DSP_Accumulate_Operation           |   352|
+|14    |          Reduction                 |DSP_Accumulate_Reduction           |    24|
+|15    |        Load                        |LoadUnit                           |  1055|
+|16    |        Mul                         |MultiplyUnit                       |  1082|
+|17    |          \MACC_DSP[0].Operation    |DSP_Multiply_Operation__xdcDup__1  |    49|
+|18    |          \MACC_DSP[10].Operation   |DSP_Multiply_Operation__xdcDup__2  |    49|
+|19    |          \MACC_DSP[11].Operation   |DSP_Multiply_Operation__xdcDup__3  |    49|
+|20    |          \MACC_DSP[12].Operation   |DSP_Multiply_Operation__xdcDup__4  |    49|
+|21    |          \MACC_DSP[13].Operation   |DSP_Multiply_Operation__xdcDup__5  |    49|
+|22    |          \MACC_DSP[14].Operation   |DSP_Multiply_Operation__xdcDup__6  |    48|
+|23    |          \MACC_DSP[1].Operation    |DSP_Multiply_Operation__xdcDup__7  |    49|
+|24    |          \MACC_DSP[2].Operation    |DSP_Multiply_Operation__xdcDup__8  |    49|
+|25    |          \MACC_DSP[3].Operation    |DSP_Multiply_Operation__xdcDup__9  |    49|
+|26    |          \MACC_DSP[4].Operation    |DSP_Multiply_Operation__xdcDup__10 |    49|
+|27    |          \MACC_DSP[5].Operation    |DSP_Multiply_Operation__xdcDup__11 |    49|
+|28    |          \MACC_DSP[6].Operation    |DSP_Multiply_Operation__xdcDup__12 |    49|
+|29    |          \MACC_DSP[7].Operation    |DSP_Multiply_Operation__xdcDup__13 |    49|
+|30    |          \MACC_DSP[8].Operation    |DSP_Multiply_Operation__xdcDup__14 |    49|
+|31    |          \MACC_DSP[9].Operation    |DSP_Multiply_Operation             |    49|
+|32    |          Prereduction              |DSP_Multiply_Prereduction          |   332|
+|33    |        Reg                         |MulRegister                        |   889|
+|34    |        Rotate                      |RotateUnit                         |   511|
+|35    |        Store                       |StoreUnit                          |   257|
+|36    |    ClockCounter                    |Counter                            |    50|
+|37    |    LSR                             |LSR255                             |   510|
+|38    |  ed_keygen_trial_v1_0_S00_AXI_inst |ed_keygen_trial_v1_0_S00_AXI       |  5858|
++------+------------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:02:14 . Memory (MB): peak = 748.488 ; gain = 541.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:47 . Memory (MB): peak = 748.488 ; gain = 196.543
+Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:02:14 . Memory (MB): peak = 748.488 ; gain = 541.191
+INFO: [Project 1-571] Translating synthesized netlist
+Reading core file 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/AddSub/AddSub.ngc' for (cell view 'AddSub', library 'work')
+Parsing EDIF File [./.ngc2edfcache/AddSub_ngc_5df37e8d.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/AddSub_ngc_5df37e8d.edif]
+Reading core file 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Reduce/Reduce.ngc' for (cell view 'Reduce', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Reduce_ngc_b069f96.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Reduce_ngc_b069f96.edif]
+Reading core file 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/DPBRAM/DPBRAM.ngc' for (cell view 'DPBRAM', library 'work')
+Parsing EDIF File [./.ngc2edfcache/DPBRAM_ngc_37f9c94.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/DPBRAM_ngc_37f9c94.edif]
+Reading core file 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Acc/Acc.ngc' for (cell view 'Acc', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Acc_ngc_28d899b1.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Acc_ngc_28d899b1.edif]
+Reading core file 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Fin/Fin.ngc' for (cell view 'Fin', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Fin_ngc_2b5c2aa7.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Fin_ngc_2b5c2aa7.edif]
+Reading core file 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/MACC/MACC.ngc' for (cell view 'MACC', library 'work')
+Parsing EDIF File [./.ngc2edfcache/MACC_ngc_954f3a18.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/MACC_ngc_954f3a18.edif]
+Reading core file 'f:/Xilinx/Projects/trial_import/trial_import.srcs/sources_1/ip/Pre/Pre.ngc' for (cell view 'Pre', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Pre_ngc_104685ff.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Pre_ngc_104685ff.edif]
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20160526
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  INV => LUT1: 3 instances
+  LD => LDCE: 3 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+206 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:02:15 . Memory (MB): peak = 748.488 ; gain = 528.395
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 748.488 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 20 19:59:37 2016...

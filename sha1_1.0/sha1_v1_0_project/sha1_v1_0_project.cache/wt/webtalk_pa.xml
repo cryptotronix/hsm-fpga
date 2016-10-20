@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Jul 29 22:52:28 2016">
+<application name="pa" timeStamp="Mon Oct 10 23:18:28 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="c6b4403490d14432a1d6e60c75140d13" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -21,17 +21,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="RunSynthesis" value="1" type="JavaHandler"/>
 </item>
-<item name="Gui Resources Info">
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, sha1_v1_0 (sha1_v1_0.v" value="8" type="GuiResourceData"/>
-<property name="sha1_v1_0.v, 70, 189" value="1" type="GuiResourceData"/>
-<property name="sha1_v1_0_S00_AXI.v, 134, 226" value="1" type="GuiResourceData"/>
-<property name="sha1_v1_0_S00_AXI.v, 204, 189" value="1" type="GuiResourceData"/>
-<property name="sha1_v1_0_S00_AXI.v, 319, 241" value="1" type="GuiResourceData"/>
-</item>
 <item name="Other">
-<property name="GuiMode" value="32" type="GuiMode"/>
+<property name="GuiMode" value="57" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="23" type="TclMode"/>
+<property name="TclMode" value="44" type="TclMode"/>
 </item>
 </section>
 </application>

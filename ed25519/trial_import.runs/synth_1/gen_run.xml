@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-3" LaunchTime="1476986230">
+  <File Type="RDS-PROPCONSTRS" Name="ed_keygen_trial_v1_0_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ed_keygen_trial_v1_0.tcl"/>
+  <File Type="RDS-RDS" Name="ed_keygen_trial_v1_0.vds"/>
+  <File Type="RDS-UTIL" Name="ed_keygen_trial_v1_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ed_keygen_trial_v1_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ed_keygen_trial_v1_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ed_keygen_trial_v1_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ed_keygen_trial_v1_0_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/Pre/Pre.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/MACC/MACC.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/Fin/Fin.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/Acc/Acc.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/Reduce/Reduce.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/AddSub/AddSub.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/DSP_Multiply_Prereduction.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/DSP_Multiply_Prereduction.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/DSP_Multiply_Operation.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/DSP_Multiply_Operation.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/DSP_Accumulate_Reduction.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/DSP_Accumulate_Reduction.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/DSP_Accumulate_Operation.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/DSP_Accumulate_Operation.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/CarryEstimator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/CarryEstimator.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/DPBRAM/DPBRAM.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/StoreUnit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/StoreUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1468513938"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/RotateUnit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/RotateUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1468513938"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/MultiplyUnit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/MultiplyUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1468513938"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/MulRegister.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/MulRegister.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/LoadUnit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/LoadUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/DSP_Addition_Reduction.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/DSP_Addition_Reduction.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/DSP_Addition_Operation.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/DSP_Addition_Operation.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Accumulate.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/Accumulate.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/MultiplicationUnit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/MultiplicationUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Flag_Register.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/Flag_Register.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/BRAM_DualPort.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/BRAM_DualPort.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/AdditionUnit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/AdditionUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/LSR255.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/LSR255.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/ArithmeticUnit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/ArithmeticUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Counter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/Counter.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Curve25519Core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../git_folder/FastCurve25519-SingleCore-Final/sources/Curve25519Core.vhd"/>
+        <Attr Name="ImportTime" Val="1468513937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/ed_keygen_trial_v1_0_S00_AXI.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ip_repo/ed_keygen_trial_1.0/hdl/ed_keygen_trial_v1_0_S00_AXI.v"/>
+        <Attr Name="ImportTime" Val="1469305971"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/ed_keygen_trial_v1_0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ip_repo/ed_keygen_trial_1.0/hdl/ed_keygen_trial_v1_0.v"/>
+        <Attr Name="ImportTime" Val="1469305971"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/DPBRAM/bram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/import_ise_summary.txt"/>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ed_keygen_trial_v1_0"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Aug 17 21:38:20 2016
+# Process ID: 21944
+# Current directory: F:/Xilinx/Projects/trial_import
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15872 F:\Xilinx\Projects\trial_import\trial_import.xpr
+# Log file: F:/Xilinx/Projects/trial_import/vivado.log
+# Journal file: F:/Xilinx/Projects/trial_import\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx/Projects/trial_import/trial_import.xpr

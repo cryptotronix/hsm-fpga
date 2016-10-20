@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="DPBRAM">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="DPBRAM/blk_mem_gen_v7_3_readme.txt" type="ignore" timestamp="Thu Jul 14 16:32:12 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/doc/blk_mem_gen_v7_3_vinfo.html" type="ignore" timestamp="Thu Jul 14 16:32:12 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/doc/pg058-blk-mem-gen.pdf" type="ignore" timestamp="Thu Jul 14 16:32:14 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/example_design/DPBRAM_exdes.ucf" type="ignore" timestamp="Thu Jul 14 16:32:14 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/example_design/DPBRAM_exdes.vhd" type="ignore" timestamp="Thu Jul 14 16:32:14 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/example_design/DPBRAM_exdes.xdc" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/example_design/DPBRAM_prod.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/implement/implement.bat" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/implement/implement.sh" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/implement/planAhead_ise.bat" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/implement/planAhead_ise.sh" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/implement/planAhead_ise.tcl" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/implement/xst.prj" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/implement/xst.scr" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/DPBRAM_synth.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/DPBRAM_tb.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/addr_gen.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/bmg_stim_gen.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/bmg_tb_pkg.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/checker.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/data_gen.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/simcmds.tcl" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/simulate_isim.bat" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/simulate_mti.bat" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/simulate_mti.do" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/simulate_mti.sh" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/simulate_ncsim.sh" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/simulate_vcs.sh" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/ucli_commands.key" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/vcs_session.tcl" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/wave_mti.do" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/functional/wave_ncsim.sv" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/random.vhd" type="ignore" timestamp="Thu Jul 14 16:32:15 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/simcmds.tcl" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/simulate_isim.bat" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/simulate_mti.bat" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/simulate_mti.do" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/simulate_mti.sh" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/simulate_ncsim.sh" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/simulate_vcs.sh" type="ignore" timestamp="Thu Jul 14 16:32:16 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/ucli_commands.key" type="ignore" timestamp="Thu Jul 14 16:32:17 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/vcs_session.tcl" type="ignore" timestamp="Thu Jul 14 16:32:17 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/wave_mti.do" type="ignore" timestamp="Thu Jul 14 16:32:17 2016" checksum="0">
+				</File>
+				<File name="DPBRAM/simulation/timing/wave_ncsim.sv" type="ignore" timestamp="Thu Jul 14 16:32:17 2016" checksum="0">
+				</File>
+				<File name="DPBRAM.asy" type="asy" timestamp="Thu Jul 14 16:32:06 2016" checksum="0">
+				</File>
+				<File name="DPBRAM.mif" type="ignore" timestamp="Thu Jul 14 16:32:06 2016" checksum="0">
+				</File>
+				<File name="DPBRAM.ngc" type="ngc" timestamp="Thu Jul 14 16:32:06 2016" checksum="0">
+				</File>
+				<File name="DPBRAM.sym" type="asy" timestamp="Thu Jul 14 16:32:06 2016" checksum="0">
+				</File>
+				<File name="DPBRAM.vhd" type="vhdl" timestamp="Thu Jul 14 16:32:07 2016" checksum="0">
+				</File>
+				<File name="DPBRAM.vho" type="vho" timestamp="Thu Jul 14 16:32:07 2016" checksum="0">
+				</File>
+				<File name="DPBRAM.xco" type="xco" timestamp="Thu Jul 14 16:32:07 2016" checksum="0">
+				</File>
+				<File name="DPBRAM_xmdf.tcl" type="ignore" timestamp="Thu Jul 14 16:32:07 2016" checksum="0">
+				</File>
+				<File name="summary.log" type="ignore" timestamp="Thu Jul 14 16:32:11 2016" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+
